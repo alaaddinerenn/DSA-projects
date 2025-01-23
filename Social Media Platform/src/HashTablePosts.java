@@ -151,7 +151,7 @@ public class HashTablePosts {
      * @param allUsers Hash table storing all users
      * @return Hash table consisting posts of the followed users
      */
-    public HashTablePosts createFollowedPostsTable(HashTableUsers hashTableUsers, HashTableUsers allUsers) { // followed userların postlarını topluyor.
+    public HashTablePosts createFollowedPostsTable(HashTableUsers hashTableUsers, HashTableUsers allUsers) { // Get followed users' posts
         HashNodeUsers[] userArray = hashTableUsers.array;
         HashTablePosts followedPosts = new HashTablePosts();
         for (HashNodeUsers node: userArray) { // Traverse the table
@@ -172,7 +172,7 @@ public class HashTablePosts {
      * @param allPosts Hash table storing all posts
      * @return The max heap consisting posts of the followed users of the user
      */
-    public MaxHeap createFollowedPostsHeap(HashTablePosts followedPosts, User realUser, HashTablePosts allPosts) { // followed userların postlarını heap yapıyor.
+    public MaxHeap createFollowedPostsHeap(HashTablePosts followedPosts, User realUser, HashTablePosts allPosts) { // Build heap from the followed users' posts
         HashNodePosts[] followedPostsArray = followedPosts.array;
         MaxHeap followedPostsHeap = new MaxHeap();
         for (HashNodePosts node: followedPostsArray) {  // Traverse the table
