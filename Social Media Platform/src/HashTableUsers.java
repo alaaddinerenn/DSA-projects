@@ -11,8 +11,8 @@ public class HashTableUsers {
     public int numOfelements;
 
     public HashTableUsers() { // Constructor
-        this.array = new HashNodeUsers[100]; // 100 DÜ YİNE
-        this.tableSize = 100; // 50 İDİ
+        this.array = new HashNodeUsers[100];
+        this.tableSize = 100;
         this.numOfelements = 0;
     }
 
