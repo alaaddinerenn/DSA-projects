@@ -8,8 +8,8 @@ import java.io.IOException;
 public class CompareFiles {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader reader1 = new BufferedReader(new FileReader("C:\\Users\\neala\\IdeaProjects\\cmpe250-hw1-testing\\src\\output.txt"));
-        BufferedReader reader2 = new BufferedReader(new FileReader("C:\\Users\\neala\\IdeaProjects\\cmpe250-hw1-testing\\src\\type3-large2-output.txt"));
+        BufferedReader reader1 = new BufferedReader(new FileReader("filepath1"));
+        BufferedReader reader2 = new BufferedReader(new FileReader("filepath2"));
 
         boolean isEqual = true;
         String line1;
